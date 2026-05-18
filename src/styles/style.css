@@ -1,0 +1,89 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+
+.my-header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  background-color: #0a0a0a;
+  align-items: center;
+}
+
+.my-header .title-app a{
+  color: white;
+  font-size: 1.5rem !important;
+  padding: 0.5rem 1rem ;
+  font-family: Poppins, sans-serif !important;
+  text-decoration: none;
+}
+
+.my-navbar ul {
+  display: flex !important;
+  list-style: none !important;
+  align-items: center;
+}
+
+.my-navbar ul li a {
+display: inline-block !important;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: ease-in-out 0.5s;
+  font-family: Quicksand;
+  padding: 1.5rem 2rem;
+  border-bottom: 2px solid transparent;
+}
+
+.my-navbar ul li a:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+.toggle-menu {
+  color: white;
+  font-size: 2rem;
+  display: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (max-width:910px) {
+    .my-header {
+        padding-inline: 0;
+    }   
+}
+@media (max-width:670px) {
+    .my-header {
+        padding-inline: 0;
+    }
+}
+
+@media (max-width:490px) {
+    .my-header {
+        padding-inline:0
+    }
+    .my-header .title-app {
+        font-size:1rem
+    }
+    .my-header .title-app a h2 {
+        font-size: 1.4rem;
+    }
+}
